@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Joan&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Trello</title>
+</head>
+
+<body>
+    <div class="trello">
+        <header class="header">
+            <nav class="navbar--left">
+                <div>
+                    <i class="fa-solid fa-bars icon-menu"></i>
+                </div>
+                <div class="logo">Trello</div>
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <p class="header__menu-text">
+                            Workspaces
+                        </p>
+                        <div class="header__menu-icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </li>
+                    <li class="header__menu-item">
+                        <p class="header__menu-text">
+                            Rencently
+                        </p>
+                        <div class="header__menu-icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </li>
+                    <li class="header__menu-item">
+                        <p class="header__menu-text">
+                            Starred
+                        </p>
+                        <div class="header__menu-icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </li>
+                    <li class="header__menu-item">
+                        <p class="header__menu-text">
+                            Sample
+                        </p>
+                        <div class="header__menu-icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </li>
+                    <li class="header__menu-item">
+                        <p class="header__menu-text ">
+                            Create new
+                        </p>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar--right">
+                <div>
+                    <input type="text" placeholder="Search..." class="header__search">
+                </div>
+                <div class="header-notify">
+                    <i class="fa-solid fa-bell icon-notify"></i>
+                </div>
+                <div class="header-account">
+                    <i class="fa-solid fa-universal-access icon-account"></i>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <ul id="myBroad" class="broad">
+            </ul>
+            <div class="new-list">
+                <button class="btn-new-list">
+                    <div><i class="fa-solid fa-plus"></i></div>
+                    <p class="btn-add-list--text">
+                        New List
+                    </p>
+                </button>
+                <div class="input-list w3-animate-bottom">
+                    <input type="text" class="input-list-value">
+                    <div class="submit-list">
+                        <button class="btn-submit-list">Add list</button>
+                        <div>
+                            <i class="fa-solid fa-xmark icon-cancel-list"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
